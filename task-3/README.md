@@ -2,19 +2,19 @@
 
 # API Endpoint: https://jsonplaceholder.typicode.com/posts
 # Objective: Create a React-Redux app that:
-Uses Redux for state management and API calls. 
-Fetches and displays posts from the API. (done)
-Includes a PostForm component to add new posts. (not finished yet)
+Uses Redux for state management and API calls. <br>
+Fetches and displays posts from the API. (done)<br>
+Includes a PostForm component to add new posts. (not finished yet)<br>
 
 # This task used @reduxjs/toolkit 
-`useEffect`: React hook, perform side-effects (such as calling API)
-`useDispatch`: Redux hook, dispatching actions
-`useSelector`: Redux hook, retrieving data from store
+`useEffect`: React hook, perform side-effects (such as calling API)<br>
+`useDispatch`: Redux hook, dispatching actions<br>
+`useSelector`: Redux hook, retrieving data from store<br>
 `fetchPost`: Action creator, send a request to fetch the list of post
 # ES6 syntax
-`ES6 Modules`: import and export
-`const`
-`Arrow function`: post => return ... (etc.)
+`ES6 Modules`: import and export<br>
+`const`<br>
+`Arrow function`: post => return ... (etc.)<br>
 ES6 syntax: help me to to keep the code short, clean, and easy to manage.
 
 # To run it
