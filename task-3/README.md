@@ -5,6 +5,7 @@
 Uses Redux for state management and API calls. <br>
 Fetches and displays posts from the API. (done)<br>
 Includes a PostForm component to add new posts. (not finished yet)<br>
+`I'm currently learning ReactJS and haven't reached the Redux section yet, but I did my best to implement part of the required functionality`
 
 # This task used @reduxjs/toolkit 
 `useEffect`: React hook, perform side-effects (such as calling API)<br>
