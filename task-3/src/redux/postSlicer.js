@@ -1,30 +1,34 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-export const fetchTodo = createAsyncThunk("fetchTodo", async () => {
+export const fetchPost = createAsyncThunk("fetchPost", async () => {
     const data = await fetch("https://jsonplaceholder.typicode.com/posts");
     return data.json();
 });
 
-const todoSlice = createSlice({
+const postSlice = createSlice({
+    // tên của slice
     name: "todo",
     initialState: {
         isLoading: false,
         data:[],
         error: null,
     },
+    // định nghĩa extreaReducers để xử lý các trạng thái của async thunk
     extraReducers: (builder) => {
-        builder.addCase(fetchTodo.pending, (state) => {
+        builder.addCase(fetchPost.pending, (state) => {
                 state.isLoading = true;
             });
-        builder.addCase(fetchTodo.fulfilled, (state, action) => {
+        builder.addCase(fetchPost.fulfilled, (state, action) => {
                 state.isLoading = false;
+                // cập nhật dữ liệu khi fetch thành công
                 state.data = action.payload;
             });
-        builder.addCase(fetchTodo.rejected, (state, action) => {
+        builder.addCase(fetchPost.rejected, (state, action) => {
                 state.isLoading = false;
+                // cập nhật lỗi khi fetch thất bại
                 state.error = action.error.message;
             });
     }
 });
 
-export default todoSlice.reducer;
+export default postSlice.reducer;

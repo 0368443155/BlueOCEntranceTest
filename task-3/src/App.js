@@ -1,10 +1,10 @@
 import {useState} from 'react';
-import Todo from './Todo';
+import Post from './Post';
 
 function App() {
   return (
     <div>
-      <Todo />
+      <Post />
     </div>
   );
 }
